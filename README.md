@@ -120,6 +120,7 @@ Clock Divider → Second Counter → Time Counter
 ```
 src/
 ├── clock_counter_hhmm.v
+├── dp_blink_1hz.v
 ├── date_counter.v
 ├── second_counter_60.v
 ├── clock_divider_1s.v
@@ -130,6 +131,9 @@ src/
 
 tb/
 └── tb_date_counter.v
+
+constrains/
+└── g.xdc
 ```
 
 ---
