@@ -106,11 +106,9 @@ Clock Divider → Second Counter → Time Counter
 ---
 
 ## 📷 Results
-<img width="1038" height="535" alt="image(95)" src="https://github.com/user-attachments/assets/14a1fee5-9cef-4619-b5c9-ae03e396d1f9" />
 
 ### 🔹 Waveform
-![Uploading image(95).png…]()
-
+<img width="1038" height="535" alt="image(95)" src="https://github.com/user-attachments/assets/14a1fee5-9cef-4619-b5c9-ae03e396d1f9" />
 
 ### 🔹 FPGA Board
 ![board](./images/board.jpg)
