@@ -52,6 +52,36 @@ It supports real-time clock display, date tracking, year display, and weekday in
 - btnD → Day decrease
 
 ---
+## 📅 Date Handling
+
+The design manages month lengths (30/31 days) and correctly transitions between months and years.
+
+### 📆 Leap Year Support
+
+Leap years are considered to correctly handle February:
+
+```verilog
+assign is_leap_year =
+    (year % 4 == 0 && year % 100 != 0) ||
+    (year % 400 == 0);
+```
+
+This ensures February has 29 days in leap years and 28 days otherwise.
+
+---
+
+## 📊 Weekday Calculation
+
+Instead of incrementing the weekday manually, the design computes it directly from the current date (year, month, day).
+
+This guarantees correct weekday values even when the date is manually adjusted.
+
+The implementation is based on **Zeller’s Congruence**:
+
+```verilog
+weekday = (h + 6) % 7;
+```
+
 
 ## 📊 Weekday Representation
 
