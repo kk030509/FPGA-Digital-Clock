@@ -86,3 +86,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports led_ext[*]]
 # Decimal Point
 set_property PACKAGE_PIN V7 [get_ports dp]
 set_property IOSTANDARD LVCMOS33 [get_ports dp]
+
+# Buzzer
+set_property PACKAGE_PIN J1 [get_ports buzzer]
+set_property IOSTANDARD LVCMOS33 [get_ports buzzer]
